@@ -1,0 +1,16 @@
+[
+    {
+        "chapter": "Declarations and Access Control",
+        "chapter-module":[
+            {
+                "moduleName": "Declare Classes & Interfaces"
+            },
+            {
+                "moduleName": "Develop Interfaces & Abstract Classes"
+            }
+        ]
+    },
+    {
+        "chapter": "Object Orientation"
+    }
+]

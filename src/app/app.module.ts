@@ -10,6 +10,7 @@ import { LoginComponent } from './login.component';
 import { FormsModule } from '@angular/forms';
 import { CourseModule } from './course/course.module';
 
+
 @NgModule({
   declarations: [
     AppComponent,

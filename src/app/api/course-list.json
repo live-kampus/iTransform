@@ -3,7 +3,7 @@
         "coursename": "Core Java",
         "courseChapter": [
             {
-                "chapter": "Declarations and Access Control"
+                "chapterName":"Declarations and Access Control"
             }
         ]
     }

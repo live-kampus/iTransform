@@ -1,3 +1,10 @@
-<div *ngFor="let cc of chapterNames">
-{{cc.chapter}}
+
+<div class="container chapter-list">
+    <ul>
+        <li *ngFor="let chaptermodule of chapterModules">
+            <a routerLink="module-details">
+                {{chaptermodule.moduleName}}
+            </a>
+        </li>
+    </ul>
 </div>

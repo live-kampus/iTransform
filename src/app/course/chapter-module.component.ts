@@ -4,7 +4,8 @@ import { CourseService } from './course.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-    templateUrl : './chapter-module.component.html'
+    templateUrl : './chapter-module.component.html',
+    styleUrls: ['./course-chapter.component.css']
 })
 export class ChapterModuleComponent implements OnInit {
 
@@ -12,6 +13,7 @@ export class ChapterModuleComponent implements OnInit {
     chapterNames: CourseChapter[];
 
     chapterModule: ChapterModule;
+    chapterModules: ChapterModule[];
     constructor(private courseService: CourseService, private route: ActivatedRoute ) {}
 
     ngOnInit(): void {
@@ -20,7 +22,10 @@ export class ChapterModuleComponent implements OnInit {
 
         this.courseService.findAllModule().subscribe((data) => {
           this.chapterName = data;
+          this.chapterModules = this.chapterName[0].chaptermodule;
           console.log(data);
+          console.log(this.chapterModule);
+          console.log(this.chapterName[0].chaptermodule);
         });
     }
 }

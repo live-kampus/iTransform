@@ -1,0 +1,11 @@
+
+<div class="container module-box">
+    <ul  *ngFor="let m of moduleDetails;let i=index">
+        <li style="font-weight: bold;font-size: 20px">{{moduleDetails[i].title}}</li>
+        <li>{{moduleDetails[i].description}}</li>
+        <li style="font-weight: 600;font-size:18px;">{{moduleDetails[i].subtitle}}</li>
+        <li>{{moduleDetails[i].subdescription}}</li>
+        <li style="font-weight: 600;font-size:18px;">{{moduleDetails[i].subtitle1}}</li>
+        <li>{{moduleDetails[i].subdescription1}}</li>
+    </ul>
+</div>

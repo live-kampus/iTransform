@@ -22,4 +22,8 @@ export class CourseService {
         return this.http.get<CourseChapter>(this.baseUrl1);
         }
 
-}
+        findModuleByName(): Observable<CourseChapter> {
+            return this.http.get<CourseChapter>(this.baseUrl1);
+        }
+    }
+

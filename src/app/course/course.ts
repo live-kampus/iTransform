@@ -7,8 +7,14 @@ export class CourseChapter {
     chapterModule: ChapterModule[];
 }
 
+export class CourseDetails {
+    title: string;
+    description: string;
+}
+
 
 export class Courses {
     courseName: string;
     courseChapter: CourseChapter[];
+    courseDetails: CourseDetails[];
 }
